@@ -1,0 +1,225 @@
+/* general settings  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --dark-main:#19283f;
+    --green-common:#33d1cc;
+    --pink-common:#ff3150;
+    --yellow-common:#ffc400;
+    --section-common:#dcf1f8;
+}
+
+/* start button component  */
+.main-btn{
+    background-color: var(--pink-common);
+    border: none;
+}
+
+.main-btn:hover{
+    background-color: var(--yellow-common);
+}
+
+.main-btn a{
+    color:var(--yellow-common);
+}
+
+.main-btn:hover a{
+    color:var(--pink-common);
+}
+/* end button component  */
+
+/* start section header component  */
+.component-container svg{
+    color: var(--yellow-common);
+}
+
+.component-container::after{
+    content: "";
+    position: absolute;
+    bottom:-20px;
+    left:50%;
+    transform: translateX(-50%);
+    width:150px;
+    height:3px;
+    background-color: var(--green-common);
+}
+/* end section header component  */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar  */
+.navbar{
+    background-color: var(--dark-main);
+}
+
+.navbar .navbar-toggler{
+    box-shadow: none;
+}
+
+
+.navbar .nav-link{
+    color:#fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color:var(--green-common);
+}
+
+.navbar .search{
+    border-left: 1px solid var(--green-common);
+}
+
+.navbar .search svg{
+    color:var(--green-common);
+}
+
+/* start landing  */
+.landing-section{
+    background-color: var(--dark-main);
+    min-height: 40vh;
+}
+
+/* start features */
+.row .icons-holder{
+    height: 150px;
+}
+
+.icons-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.icons-holder .num{
+    font-size: 11rem;
+    color: var(--section-common);
+}
+
+.icons-holder .illu{
+    color: var(--green-common);
+    font-size: 4rem;
+}
+
+.row .box h3{
+    color: var(--yellow-common);
+}
+
+/* start our work section  */
+.work-section{
+    background-color: var(--section-common);
+}
+
+.work-section ul li{
+    cursor: pointer;
+}
+.work-section ul li:not(.active):hover{
+    color: var(--pink-common);
+}
+
+.work-section ul li.active{
+    background-color: var(--pink-common);
+    color: var(--yellow-common);
+}
+
+
+/* start stuff  */
+.stuff .desc{
+    max-width: 600px;
+}
+
+/* start team  */
+section.team{
+    background-color: var(--section-common);
+}
+
+.team .section-head h2{
+    color:var(--yellow-common);
+}
+
+.member h3{
+    background-color: var(--green-common);
+}
+
+/* start offer  */
+section.offer{
+    background-color: var(--dark-main);
+}
+
+/* start subscribe  */
+section.subscribe{
+    background-color: var(--yellow-common);
+}
+
+.subscribe .email-input{
+    color: var(--dark-main);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    transition: 0.3s linear;
+}
+
+.subscribe .email-input:focus{
+    border-color: #fff;
+}
+
+.subscribe input[type="submit"]{
+    background-color: var(--dark-main);
+    color: var(--yellow-common);
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    transition:0.3s ease;
+}
+
+.subscribe input[type="submit"]:hover{
+    background-color: var(--yellow-common);
+    color: var(--dark-main);
+    border-color: var(--dark-main);
+}
+
+@media (max-width: 768px) {
+    .subscribe .container div{
+        margin-bottom: 2rem;
+    }
+}
+
+/* start footer  */
+footer{
+    background-color: var(--dark-main);
+}
+
+@media (max-width: 768px) {
+    footer .left-content{
+        margin-bottom: 2rem;
+    }
+}
+
+.left-content .cpy-rt > span{
+    color: var(--green-common);
+}
+
+.left-content .cpy-rt div span{
+    color: var(--yellow-common);
+}
+
+.right-content .facebook{
+    color: #1877f2;
+}
+
+.right-content .twitter{
+    color: #1da1f2;
+}
+
+.right-content .linkedin{
+    color: #0077b5;
+}
+
+.right-content .youtube{
+    color: #ff0000;
+}
